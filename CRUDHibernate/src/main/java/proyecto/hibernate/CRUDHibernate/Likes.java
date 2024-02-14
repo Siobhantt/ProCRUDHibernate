@@ -3,9 +3,23 @@ package proyecto.hibernate.CRUDHibernate;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Likes")
 public class Likes implements Serializable{
+	
+	@Id
+	@Column(name ="idLikes")
 	public int idLikes;
+	
+	@Column(name ="idUsuarios")
 	public int idUsuarios;
+	
+	@Column(name ="idPosts")
 	public int idPosts;
 	
 	//Constructor vacio

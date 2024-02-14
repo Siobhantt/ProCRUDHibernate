@@ -2,13 +2,32 @@ package proyecto.hibernate.CRUDHibernate;
 
 import java.io.Serializable;
 
-public class Usuarios implements Serializable{
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "Usuarios")
+public class Usuarios implements Serializable{
+	
+	@Id
+	@Column(name="idUsuarios")
 	private int idUsuarios;
+	
+	@Column(name="Nombre")
 	private String Nombre;
+	
+	@Column(name="Apellidos")
 	private String Apellidos;
+	
+	@Column(name="Username")
 	private String Username;
+	
+	@Column(name="password")
 	private String password;
+	
+	@Column(name="email")
 	private String email;
 	
 	//Constructor vacio

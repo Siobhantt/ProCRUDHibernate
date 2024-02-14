@@ -3,10 +3,26 @@ package proyecto.hibernate.CRUDHibernate;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Posts")
 public class Posts implements Serializable{
+	
+	@Id
+	@Column(name = "idPosts")
 	private int idPosts;
+	
+	@Column(name = "idUsuarios")
 	private int idUsuarios;
+	
+	@Column(name = "created_at")
 	private Date created_at;
+	
+	@Column(name = "updated_at")
 	private Date updated_at;
 	//Constructor vacio
 	public Posts() {
