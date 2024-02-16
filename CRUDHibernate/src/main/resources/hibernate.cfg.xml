@@ -19,8 +19,8 @@
   <property name="hbm2ddl.auto">update</property>
   
   <!-- Es probable que este mapeo no funcione por la ruta de carpetas-->
-  <mapping class="Usuarios"/>
-  <mapping class="Posts"/>
-  <mapping class="Likes"/>
+<mapping class="proyecto.hibernate.CRUDHibernate.Usuarios"/>
+<mapping class="proyecto.hibernate.CRUDHibernate.Posts"/>
+<mapping class="proyecto.hibernate.CRUDHibernate.Likes"/>
  </session-factory>
 </hibernate-configuration>

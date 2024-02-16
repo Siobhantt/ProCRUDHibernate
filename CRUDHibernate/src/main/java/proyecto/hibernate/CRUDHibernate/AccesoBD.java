@@ -17,6 +17,10 @@ public class AccesoBD {
 	private Session sesion;
 	private Transaction transaction;
 	
+	 public AccesoBD() {
+	        config();
+	    }
+	
 	protected void config() {
 		final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
 				.configure()
